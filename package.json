@@ -1,0 +1,55 @@
+{
+  "_from": "jquery-mention",
+  "_id": "jquery-mention@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-udF8In1tzLb34zKjudeft+np34qZWjlMLuukBPIWuggBEejhDa65r0mCGPsTJ/1HRoanGWcYEVh5AlFbGCf7mQ==",
+  "_location": "/jquery-mention",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "jquery-mention",
+    "name": "jquery-mention",
+    "escapedName": "jquery-mention",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery-mention/-/jquery-mention-1.0.0.tgz",
+  "_shasum": "efa5dacc6c38d16f7e4fa421be82a54cefe1dfef",
+  "_spec": "jquery-mention",
+  "_where": "C:\\wamp\\www\\git",
+  "author": {
+    "name": "Hengki Sihombing",
+    "email": "hengki.sihombing@gmail.com",
+    "url": "http://hengkiardo.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/urbanhire/Mention.js/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "'Lightweight wrapper for adding @user mention functionality to Twitter Bootstraps Typeahead plugin'",
+  "homepage": "https://github.com/urbanhire/Mention.js#readme",
+  "keywords": [
+    "mentions",
+    "typehead",
+    "jquery",
+    "mentions"
+  ],
+  "license": "ISC",
+  "main": "mention.js",
+  "name": "jquery-mention",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urbanhire/Mention.js.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

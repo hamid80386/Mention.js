@@ -4,7 +4,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title>Mention.js Test</title>
 
-	<link rel="stylesheet" type="text/css" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../recommended-styles.css">
 	
 	<style type='text/css'>
@@ -55,7 +55,7 @@
 
 	<h3>Example #1: Name, Username, &amp; Image</h3>
 	<p>In this example, a full name, image, and username is shown in the resulting list. You can query by username OR full name (try typing @Jenna)</p>
-	<textarea id="full"></textarea>
+	<textarea id="full" class="full1"></textarea>
 
 	<h3>Example #2: Name, Username</h3>
 	<p>In this example, a full name and username is shown in the resulting list.</p>
@@ -68,10 +68,13 @@
 	<script type='text/javascript' src='http://code.jquery.com/jquery-1.8.2.js'></script>
 	<script type='text/javascript' src="../bootstrap-typeahead.js"></script>
 	<script type='text/javascript' src="../mention.js"></script>
+	<script type='text/javascript' src="../bootstrap-typeahead2.js"></script>
+	<script type='text/javascript' src="../mention2.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			
 			$("#full").mention({
+				delimiter:'@',
 				users: [{
 					name: 'Lindsay Made',
 					username: 'LindsayM',
@@ -114,7 +117,52 @@
 					image: 'http://placekitten.com/21/20'
 				}]
 			});
-
+			
+			$(".full1").hashtag({
+				users: [{
+					name: 'Lindsay Made',
+					username: 'LindsayM',
+					image: 'http://placekitten.com/25/25'
+				}, {
+					name: 'Rob Dyrdek',
+					username: 'robdyrdek',
+					image: 'http://placekitten.com/25/24'
+				}, {
+					name: 'Rick Bahner',
+					username: 'RickyBahner',
+					image: 'http://placekitten.com/25/23'
+				}, {
+					name: 'Jacob Kelley',
+					username: 'jakiestfu',
+					image: 'http://placekitten.com/25/22'
+				}, {
+					name: 'John Doe',
+					username: 'HackMurphy',
+					image: 'http://placekitten.com/25/21'
+				}, {
+					name: 'Charlie Edmiston',
+					username: 'charlie',
+					image: 'http://placekitten.com/25/20'
+				}, {
+					name: 'Andrea Montoya',
+					username: 'andream',
+					image: 'http://placekitten.com/24/20'
+				}, {
+					name: 'Jenna Talbert',
+					username: 'calisunshine',
+					image: 'http://placekitten.com/23/20'
+				}, {
+					name: 'Street League',
+					username: 'streetleague',
+					image: 'http://placekitten.com/22/20'
+				}, {
+					name: 'Loud Mouth Burrito',
+					username: 'Loudmouthfoods',
+					image: 'http://placekitten.com/21/20'
+				}]
+			});
+			
+			
 
 			$("#med").mention({
 				users: [{
